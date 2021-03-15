@@ -1,12 +1,19 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import Vue from "vue";
+import AppVue from "./AppVue.vue";
+import router from "./router";
+import store from "./store";
 
-Vue.config.productionTip = false
+import SVGInject from "@iconfu/svg-inject";
+SVGInject.setOptions({
+  makeIdsUnique: false, // do not make ids used within the SVG unique
+});
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(AppVue),
+}).$mount("#app");
+
+Vue.use(SVGInject);
