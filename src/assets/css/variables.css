@@ -21,4 +21,8 @@
   --sobremicomp-content-grd-areas: "Profile Text";
   --sobremicomp-content-grd-columns: auto auto;
   --sobremicomp-content-grd-rows: 1fr;
+
+  /* ServiciosComp */
+  --servicioscomp-pdd: 40px;
+  --servicioscomp-list-gap: 50px;
 }

@@ -41,6 +41,7 @@ export default {
 
 <style scoped>
 .divPortadaComp {
+  z-index: 1;
   display: grid;
   grid-template-areas: "Portada";
   grid-template-columns: 1fr;
@@ -139,12 +140,12 @@ export default {
   z-index: 3;
   min-width: 30px;
   max-width: 30px;
-  min-height: 30px;
-  max-height: 30px;
+  min-height: 25px;
+  max-height: 25px;
 
   justify-self: center;
   align-self: end;
-  padding-bottom: 10px;
+  margin-bottom: 60px;
 
   fill: #ffffff;
 }

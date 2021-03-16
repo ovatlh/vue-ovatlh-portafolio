@@ -10,6 +10,10 @@
     --sobremicomp-content-grd-areas: "Profile" "Text";
     --sobremicomp-content-grd-columns: 1fr;
     --sobremicomp-content-grd-rows: auto 1fr;
+
+    /* ServiciosComp */
+    --servicioscomp-pdd: 10px;
+    --servicioscomp-list-gap: 30px;
   }
 }
 

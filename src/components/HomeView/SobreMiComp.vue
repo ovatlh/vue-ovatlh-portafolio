@@ -47,6 +47,7 @@ export default {
 
 <style scoped>
 .divSobreMiComp {
+  z-index: 2;
   display: grid;
   grid-template-areas: "SobreMi";
   grid-template-columns: 1fr;
@@ -56,6 +57,10 @@ export default {
   min-height: 600px;
 
   overflow: hidden;
+  
+  background-color: #ffffff;
+
+  box-shadow: 0 -50px 50px 0 rgba(0, 0, 0, 1);
 }
 
 .content {
