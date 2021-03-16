@@ -17,6 +17,8 @@
         </div>
       </div>
     </div>
+
+    <img class="iconScroll" :src="iconScrollV" alt="scroll-v" onload="SVGInject(this)">
   </div>
 </template>
 
@@ -29,6 +31,7 @@ export default {
     return {
       imgPortada: require("@/assets/imgs/portada.jpg"),
       imgProfile01: require("@/assets/imgs/profile_picture_01.jpg"),
+      iconScrollV: require("@/assets/icons/scroll-v.svg"),
     };
   },
   methods: {},
@@ -42,8 +45,6 @@ export default {
   grid-template-areas: "Portada";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  justify-content: center;
-  align-content: center;
 
   min-height: 600px;
   height: 100vh;
@@ -57,7 +58,9 @@ export default {
 
   object-fit: cover;
   width: 100%;
-  height: 100%;
+
+  min-height: 600px;
+  height: 100vh;
 }
 
 .content {
@@ -129,5 +132,20 @@ export default {
 .dev {
   font-size: 18px;
   line-height: 18px;
+}
+
+.iconScroll {
+  grid-area: Portada;
+  z-index: 3;
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+
+  justify-self: center;
+  align-self: end;
+  padding-bottom: 10px;
+
+  fill: #ffffff;
 }
 </style>
