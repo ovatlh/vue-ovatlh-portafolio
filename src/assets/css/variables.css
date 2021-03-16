@@ -11,7 +11,14 @@
   --homeview-bg: #f5f5f5;
   --homeview-clr: #1e1e1e;
   --homeview-minheight: 100vh;
-  --homeview-content-grd-areas: "Tavolh ovaTlh";
-  --homeview-content-grd-columns: auto auto;
-  --homeview-content-grd-rows: 1fr;
+
+  /* PortadaComp */
+  --portadacomp-content-grd-areas: "Tavolh ovaTlh";
+  --portadacomp-content-grd-columns: auto auto;
+  --portadacomp-content-grd-rows: 1fr;
+
+  /* SobreMiComp */
+  --sobremicomp-content-grd-areas: "Profile Text";
+  --sobremicomp-content-grd-columns: auto auto;
+  --sobremicomp-content-grd-rows: 1fr;
 }

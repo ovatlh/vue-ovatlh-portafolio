@@ -9,7 +9,7 @@
       </div>
 
       <div class="ovatlh">
-        <img class="imgProfile" :src="imgProfile" alt="ovatlh - profile pic" />
+        <img class="imgProfile" :src="imgProfile01" alt="ovatlh - profile pic" />
 
         <div class="desc">
           <p class="atovatlh">@ovatlh</p>
@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       imgPortada: require("@/assets/imgs/portada.jpg"),
-      imgProfile: require("@/assets/imgs/profile_picture_01.jpg"),
+      imgProfile01: require("@/assets/imgs/profile_picture_01.jpg"),
     };
   },
   methods: {},
@@ -69,9 +69,9 @@ export default {
 
   display: grid;
   gap: 20px;
-  grid-template-areas: var(--homeview-content-grd-areas);
-  grid-template-columns: var(--homeview-content-grd-columns);
-  grid-template-rows: var(--homeview-content-grd-rows);
+  grid-template-areas: var(--portadacomp-content-grd-areas);
+  grid-template-columns: var(--portadacomp-content-grd-columns);
+  grid-template-rows: var(--portadacomp-content-grd-rows);
   justify-items: center;
   align-items: center;
   width: 100%;
