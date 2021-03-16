@@ -1,11 +1,19 @@
 <template>
   <div class="divHomeView">
-    <h1>home-view Component</h1>
+    <PortadaComp />
+    <SobreMiComp />
   </div>
 </template>
 
 <script>
+import PortadaComp from "@/components/HomeView/PortadaComp.vue";
+import SobreMiComp from "@/components/HomeView/SobreMiComp.vue";
+
 export default {
+  components: {
+    PortadaComp,
+    SobreMiComp,
+  },
   name: "home-view",
   props: [],
   mounted() {},
@@ -17,4 +25,17 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.divHomeView {
+  z-index: var(--view-index);
+
+  background-color: var(--homeview-bg);
+  color: var(--homeview-clr);
+  min-height: var(--homeview-minheight);
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  align-content: start;
+}
+</style>
