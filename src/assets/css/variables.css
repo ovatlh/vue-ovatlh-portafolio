@@ -29,4 +29,8 @@
   /* ProyectosComp */
   --proyectoscomp-pdd: 50px;
   --proyectoscomp-list-gap: 40px;
+
+  /* TecnologiasComp */
+  --tecnologiascomp-pdd: 50px;
+  --tecnologiascomp-list-gap: 30px;
 }
