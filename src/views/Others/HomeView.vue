@@ -5,6 +5,7 @@
     <ServiciosComp />
     <ProyectosComp />
     <TecnologiasComp />
+    <FooterComp />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import SobreMiComp from "@/components/HomeView/SobreMiComp.vue";
 import ServiciosComp from "@/components/HomeView/ServiciosComp.vue";
 import ProyectosComp from "@/components/HomeView/ProyectosComp.vue";
 import TecnologiasComp from "@/components/HomeView/TecnologiasComp.vue";
+import FooterComp from "@/components/HomeView/FooterComp.vue";
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     ServiciosComp,
     ProyectosComp,
     TecnologiasComp,
+    FooterComp,
   },
   name: "home-view",
   props: [],
