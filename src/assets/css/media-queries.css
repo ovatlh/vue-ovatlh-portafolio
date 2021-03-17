@@ -14,6 +14,10 @@
     /* ServiciosComp */
     --servicioscomp-pdd: 10px;
     --servicioscomp-list-gap: 30px;
+
+    /* ProyectosComp */
+    --proyectoscomp-pdd: 50px 10px;
+    --proyectoscomp-list-gap: 20px;
   }
 }
 

@@ -25,4 +25,8 @@
   /* ServiciosComp */
   --servicioscomp-pdd: 40px;
   --servicioscomp-list-gap: 50px;
+
+  /* ProyectosComp */
+  --proyectoscomp-pdd: 50px;
+  --proyectoscomp-list-gap: 40px;
 }
