@@ -97,6 +97,9 @@ export default {
 
   width: 100px;
   height: 130px;
+
+  justify-items: center;
+  align-items: center;
 }
 
 .img {
@@ -106,8 +109,6 @@ export default {
   max-width: 80%;
   min-height: 80%;
   max-height: 80%;
-  justify-self: center;
-  align-self: center;
 }
 
 .nombre {
@@ -115,7 +116,5 @@ export default {
   width: 100px;
   padding: 0 10px;
   text-align: center;
-  justify-self: center;
-  align-self: center;
 }
 </style>
