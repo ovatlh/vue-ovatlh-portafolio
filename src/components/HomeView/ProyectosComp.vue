@@ -1,5 +1,5 @@
 <template>
-  <div class="divProyectosComp" id="proyectosrecientes">
+  <div class="divProyectosComp" id="proyectos">
     <h1 class="title">Proyectos</h1>
 
     <div class="list">
@@ -21,7 +21,7 @@
 
       <router-link
         class="item ver-todos"
-        to="/proyectos"
+        :to="{ name: 'ProyectosTodos' }"
         title="Ver todos los proyectos"
       >
         <div class="content">

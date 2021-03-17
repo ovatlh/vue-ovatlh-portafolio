@@ -14,6 +14,14 @@ const routes = [
       ),
   },
   {
+    path: "/proyectos/todos",
+    name: "ProyectosTodos",
+    component: () =>
+      import(
+        /* webpackChunkName: "chunckProyectosView" */ "../views/Proyectos/ProyectosView.vue"
+      ),
+  },
+  {
     path: "*",
     name: "NotFound",
     component: () =>
@@ -24,6 +32,13 @@ const routes = [
 ];
 
 const router = new VueRouter({
+  scrollBehavior: function(to) {
+    if (to.hash) {
+      return { selector: to.hash };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
   routes,
 });
 

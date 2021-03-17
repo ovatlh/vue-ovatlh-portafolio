@@ -1,11 +1,11 @@
 <template>
   <div id="navbarmovil" class="divNavbarMovilComp">
     <transition-group name="navbar-items">
-      <a v-if="menu_active" key="inicio" href="#" @click.prevent="mthGoArea('inicio')">Inicio</a>
-      <a v-if="menu_active" key="sobremi" href="#" @click.prevent="mthGoArea('sobremi')">Sobre mi</a>
-      <a v-if="menu_active" key="servicios" href="#" @click.prevent="mthGoArea('servicios')">Servicios</a>
-      <a v-if="menu_active" key="proyectosrecientes" href="#" @click.prevent="mthGoArea('proyectosrecientes')">Proyectos</a>
-      <a v-if="menu_active" key="tecnologias" href="#" @click.prevent="mthGoArea('tecnologias')">Tecnologias</a>
+      <router-link v-if="menu_active" key="inicio" :to="{ name: 'Home', hash: '#inicio' }">Inicio</router-link>
+      <router-link v-if="menu_active" key="sobremi" :to="{ name: 'Home', hash: '#sobremi' }">Sobre mi</router-link>
+      <router-link v-if="menu_active" key="servicios" :to="{ name: 'Home', hash: '#servicios' }">Servicios</router-link>
+      <router-link v-if="menu_active" key="proyectos" :to="{ name: 'Home', hash: '#proyectos' }">Proyectos</router-link>
+      <router-link v-if="menu_active" key="tecnologias" :to="{ name: 'Home', hash: '#tecnologias' }">Tecnologías</router-link>
     </transition-group>
 
     <div class="menu" @click="mthToogleMenu">
@@ -33,13 +33,9 @@ export default {
     };
   },
   methods: {
-    mthGoArea(areaID) {
-      var area = document.getElementById(areaID);
-      area.scrollIntoView();
-    },
     mthToogleMenu(){
       this.menu_active = !this.menu_active;
-    }
+    },
   },
   computed: {
     cmpShowMenuIcon(){
@@ -63,7 +59,7 @@ export default {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-content: end;
-  position: sticky;
+  position: fixed;
   bottom: 20px;
   right: 20px;
   justify-self: end;

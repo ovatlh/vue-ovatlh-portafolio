@@ -1,10 +1,10 @@
 <template>
   <div id="navbar" class="divNavbarComp">
-    <a href="#" @click.prevent="mthGoArea('inicio')">Inicio</a>
-    <a href="#" @click.prevent="mthGoArea('sobremi')">Sobre mi</a>
-    <a href="#" @click.prevent="mthGoArea('servicios')">Servicios</a>
-    <a href="#" @click.prevent="mthGoArea('proyectosrecientes')">Proyectos</a>
-    <a href="#" @click.prevent="mthGoArea('tecnologias')">Tecnologias</a>
+    <router-link :to="{ name: 'Home', hash: '#inicio' }">Inicio</router-link>
+    <router-link :to="{ name: 'Home', hash: '#sobremi' }">Sobre mi</router-link>
+    <router-link :to="{ name: 'Home', hash: '#servicios' }">Servicios</router-link>
+    <router-link :to="{ name: 'Home', hash: '#proyectos' }">Proyectos</router-link>
+    <router-link :to="{ name: 'Home', hash: '#tecnologias' }">Tecnologías</router-link>
   </div>
 </template>
 
@@ -16,12 +16,7 @@ export default {
   data() {
     return {};
   },
-  methods: {
-    mthGoArea(areaID) {
-      var area = document.getElementById(areaID);
-      area.scrollIntoView();
-    },
-  },
+  methods: {},
   computed: {},
 };
 </script>
