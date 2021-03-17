@@ -1,5 +1,5 @@
 <template>
-  <div class="divPortadaComp">
+  <div class="divPortadaComp" id="inicio">
     <img class="imgBG" :src="imgPortada" alt="portada" />
 
     <div class="content">

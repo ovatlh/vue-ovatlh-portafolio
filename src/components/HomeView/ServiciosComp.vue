@@ -1,5 +1,5 @@
 <template>
-  <div class="divServiciosComp">
+  <div class="divServiciosComp" id="servicios">
     <h1 class="title">Servicios</h1>
 
     <div class="list">

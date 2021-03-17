@@ -40,6 +40,7 @@ export default {
 <style scoped>
 .divHomeView {
   z-index: var(--view-index);
+  grid-area: AppVue;
 
   background-color: var(--homeview-bg);
   color: var(--homeview-clr);

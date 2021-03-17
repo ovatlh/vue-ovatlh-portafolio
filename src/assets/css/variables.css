@@ -4,6 +4,9 @@
   --body-clr: #ffffff;
   --body-fontfamily: "Poppins";
 
+  /* Navbar */
+  --navbar-index: 2;
+
   /* Views */
   --view-index: 1;
 

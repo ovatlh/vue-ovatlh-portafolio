@@ -12,7 +12,7 @@
     --sobremicomp-content-grd-rows: auto 1fr;
 
     /* ServiciosComp */
-    --servicioscomp-pdd: 10px;
+    --servicioscomp-pdd: 40px 10px;
     --servicioscomp-list-gap: 30px;
 
     /* ProyectosComp */

@@ -1,5 +1,5 @@
 <template>
-  <div class="divSobreMiComp">
+  <div class="divSobreMiComp" id="sobremi">
     <div class="content">
       <div class="divImgProfile">
         <div class="imgBGEffect"></div>
