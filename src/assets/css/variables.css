@@ -6,18 +6,8 @@
 
   /* Navbar */
   --navbar-index: 2;
-  --navbar-menu-display: none;
-  --navbar-a-pdd: 10px 5px;
-  --navbar-grd-flow: column;
-  --navbar-grd-rows: 1fr;
-  --navbar-grd-columns: auto;
-  --navbar-top: 0;
-  --navbar-bottom: initial;
-  --navbar-left: 0;
-  --navbar-right: initial;
-  --navbar-width: 100%;
-  --navbar-align-self: start;
-  --navbar-justify-self: start;
+  --navbar-desktop: grid;
+  --navbar-movil: none;
 
   /* Views */
   --view-index: 1;

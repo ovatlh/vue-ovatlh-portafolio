@@ -1,16 +1,19 @@
 <template>
   <div id="app" class="app">
     <NavbarComp />
+    <NavbarMovilComp />
     <router-view />
   </div>
 </template>
 
 <script>
-import NavbarComp from  "@/components/Layout/NavbarComp.vue";
+import NavbarComp from "@/components/Layout/NavbarComp.vue";
+import NavbarMovilComp from "@/components/Layout/NavbarMovilComp.vue";
 
 export default {
   components: {
     NavbarComp,
+    NavbarMovilComp,
   },
   name: "app-vue",
   props: [],
