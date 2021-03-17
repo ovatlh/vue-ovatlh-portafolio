@@ -1,5 +1,18 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
   :root {
+    /* Navbar */
+    --navbar-menu-display: grid;
+    --navbar-a-pdd: 10px;
+    --navbar-grd-flow: row;
+    --navbar-grd-rows: auto;
+    --navbar-grd-columns: 1fr;
+    --navbar-top: initial;
+    --navbar-bottom: 20px;
+    --navbar-left: initial;
+    --navbar-right: 20px;
+    --navbar-width: auto;
+    --navbar-align-self: end;
+    --navbar-justify-self: end;
 
     /* PortadaComp */
     --portadacomp-content-grd-areas: "ovaTlh" "Tavolh";
