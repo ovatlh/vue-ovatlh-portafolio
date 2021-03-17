@@ -9,21 +9,36 @@
       </div>
 
       <div class="ovatlh">
-        <img class="imgProfile" :src="imgProfile01" alt="ovatlh - profile pic" />
+        <img
+          class="imgProfile"
+          :src="imgProfile01"
+          alt="ovatlh - profile pic"
+        />
 
         <div class="desc">
           <p class="atovatlh">@ovatlh</p>
+          <RedesComp />
           <p class="dev">full-stack developer</p>
         </div>
       </div>
     </div>
 
-    <img class="iconScroll" :src="iconScrollV" alt="scroll-v" onload="SVGInject(this)">
+    <img
+      class="iconScroll"
+      :src="iconScrollV"
+      alt="scroll-v"
+      onload="SVGInject(this)"
+    />
   </div>
 </template>
 
 <script>
+import RedesComp from "@/components/Others/RedesComp.vue";
+
 export default {
+  components: {
+    RedesComp,
+  },
   name: "portada-comp",
   props: [],
   mounted() {},
@@ -83,7 +98,8 @@ export default {
   color: #ffffff;
 }
 
-.tavolh, .ovatlh {
+.tavolh,
+.ovatlh {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
