@@ -26,5 +26,6 @@ export default {
 
   background-color: #1e1e1e;
   color: #ffffff;
+  height: var(--footercomp-height);
 }
 </style>

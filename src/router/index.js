@@ -14,7 +14,7 @@ const routes = [
       ),
   },
   {
-    path: "/proyectos/todos",
+    path: "/proyectos/",
     name: "ProyectosTodos",
     component: () =>
       import(

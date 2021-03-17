@@ -38,4 +38,13 @@
   /* TecnologiasComp */
   --tecnologiascomp-pdd: 50px;
   --tecnologiascomp-list-gap: 30px;
+
+  /* FooterComp */
+  --footercomp-height: 120px;
+
+  /* ProyectosView */
+  --proyectosview-bg: #f5f5f5;
+  --proyectosview-clr: #1e1e1e;
+  --proyectosview-minheight: 100vh;
+  --proyectosview-pdd: 40px;
 }

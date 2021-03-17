@@ -31,7 +31,7 @@ export default {
   grid-template-columns: auto;
   grid-template-rows: 1fr;
   justify-content: start;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
