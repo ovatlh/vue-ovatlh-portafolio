@@ -33,6 +33,7 @@ export default {
   justify-content: start;
   position: fixed;
   width: 100%;
+  height: var(--navbar-desktop-height);
   top: 0;
   left: 0;
   justify-self: start;

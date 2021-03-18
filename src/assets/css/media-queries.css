@@ -21,6 +21,9 @@
     /* ProyectosComp */
     --proyectoscomp-pdd: 50px 10px;
     --proyectoscomp-list-gap: 20px;
+
+    /* MyAnimeSearcherView */
+    --mal-icon-left: calc(100% / 2 - 50px);
   }
 }
 

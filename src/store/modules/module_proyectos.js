@@ -2,7 +2,7 @@ export default {
   state: {
     list_proyectos: [
       {
-        img: require("@/assets/imgs/profile_picture_01.jpg"),
+        img: require("@/assets/proyectos/myanimesearcher/imgs/mal-favicon.png"),
         nombre: "MyAnimeSearcher",
         title: "MyAnimeSearcher: Buscador de MyAnimeList",
         link: { path: "/proyectos/myanimesearcher" },

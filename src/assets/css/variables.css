@@ -7,6 +7,7 @@
   /* Navbar */
   --navbar-index: 2;
   --navbar-desktop: grid;
+  --navbar-desktop-height: 41px;
   --navbar-movil: none;
 
   /* Views */
@@ -47,4 +48,7 @@
   --proyectosview-clr: #1e1e1e;
   --proyectosview-minheight: 100vh;
   --proyectosview-pdd: 40px;
+
+  /* MyAnimeSearcherView */
+  --mal-icon-left: 50px;
 }

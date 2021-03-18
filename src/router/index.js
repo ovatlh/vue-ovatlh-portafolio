@@ -22,6 +22,22 @@ const routes = [
       ),
   },
   {
+    path: "/proyectos/fcasabinas",
+    name: "FCASabinas",
+    component: () =>
+      import(
+        /* webpackChunkName: "chunckProyectoFCASabinasView" */ "../views/Proyectos/Proyecto/FCASabinasView.vue"
+      ),
+  },
+  {
+    path: "/proyectos/myanimesearcher",
+    name: "MyAnimeSearcher",
+    component: () =>
+      import(
+        /* webpackChunkName: "chunckProyectoMyAnimeSearcherView" */ "../views/Proyectos/Proyecto/MyAnimeSearcherView.vue"
+      ),
+  },
+  {
     path: "*",
     name: "NotFound",
     component: () =>

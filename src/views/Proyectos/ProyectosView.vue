@@ -66,7 +66,7 @@ export default {
 }
 
 .top {
-  padding: var(--proyectosview-pdd);
+  padding: var(--navbar-desktop-height) var(--proyectosview-pdd);
 }
 
 .list {
