@@ -10,7 +10,7 @@
     <div class="content">
       <p><strong>Festival de la Carne Asada 2020 - Sabinas, Coahuila</strong></p>
       <p>Fue un evento donde varios equipos competían entre sí para saber quien era el mejor en el ramo de la carne asada de manera amateur.</p>
-      <p>Estos fueron calificador por jueces, los cuales tienen experiencia en la cocina.</p>
+      <p>Estos fueron calificados por jueces, los cuales tienen experiencia en la cocina.</p>
       
       <br>
 

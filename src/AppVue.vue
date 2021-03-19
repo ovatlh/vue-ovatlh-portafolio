@@ -6,7 +6,7 @@
     <router-view />
 
     <!-- <PageTransitionComp v-if="cmpMapShowCambioPagina" /> -->
-    <transition name="page-transition" mode="in-out">
+    <transition name="page-transition" mode="in-out" :duration="500">
       <PageTransitionComp v-if="cmpMapShowCambioPagina" key="pagetransition" />
     </transition>
   </div>
@@ -53,17 +53,18 @@ export default {
 }
 
 .page-transition-enter-active {
-  animation: pt-in 0.5s linear;
+  animation: pt-in 0.5s ease-out;
+  animation-delay: 0.0s;
 }
 
 .page-transition-leave-active {
-  animation: pt-out 0.5s linear;
-  animation-delay: 0.3s;
+  animation: pt-out 0.5s ease-in;
+  animation-delay: 0.0s;
 }
 
 @keyframes pt-in {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -75,7 +76,7 @@ export default {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 </style>

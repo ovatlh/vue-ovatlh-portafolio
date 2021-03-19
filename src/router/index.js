@@ -52,48 +52,43 @@ const router = new VueRouter({
   scrollBehavior: function(to) {
     if (to.hash) {
       return { selector: to.hash };
-    } else {
-      return { x: 0, y: 0 };
-    }
+    } 
+    
+    return { x: 0, y: 0 };
   },
   routes,
 });
 
-router.beforeEach((to, from, next) => {
-  // console.log("Cargando...");
-  // console.log("from:" ,from);
+router.beforeResolve((to, from, next) => {
   if (from.fullPath.includes("/home")) {
     if (!to.fullPath.includes("/home")) {
-      console.log("Page from to: Other");
-      // alert("Other");
-      vuexstore.dispatch("actToggleCambioPagina", { status: true }).then(() => {
+      setTimeout(function() {
         next();
-      });
+      }, 400);
+  
+      vuexstore.dispatch("actToggleCambioPagina", { status: true });
+  
+      setTimeout(function() {
+        vuexstore.dispatch("actToggleCenterCambioPagina", { status: true });
+      }, 300);
     } else {
       next();
     }
-    // else {
-    //   console.log("Page from to: Home");
-    // }
   } else {
-    console.log("Page to: Other");
-    // alert("Other");
-    vuexstore.dispatch("actToggleCambioPagina", { status: true }).then(() => {
+    setTimeout(function() {
       next();
-    });
-    // if (!to.fullPath.includes("/home")) {
-    //   console.log("Page to: Other");
-    // } else {
-    //   console.log("Page to: Home");
-    // }
-  }
-  // console.log("to:" ,to);
+    }, 400);
 
-  // next();
+    vuexstore.dispatch("actToggleCambioPagina", { status: true });
+
+    setTimeout(function() {
+      vuexstore.dispatch("actToggleCenterCambioPagina", { status: true });
+    }, 300);
+  }
 });
 
-router.afterEach(() => {
-  // console.log("Terminado...");
+router.afterEach(() => {  
+  vuexstore.dispatch("actToggleCenterCambioPagina", { status: false });
   vuexstore.dispatch("actToggleCambioPagina", { status: false });
 });
 
