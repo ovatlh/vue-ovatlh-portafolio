@@ -8,9 +8,9 @@ export default {
         link: { path: "/proyectos/myanimesearcher" },
       },
       {
-        img: require("@/assets/imgs/profile_picture_01.jpg"),
+        img: require("@/assets/proyectos/fcasabinas/imgs/fcasabinas_icon.png"),
         nombre: "FCA Sabinas",
-        title: "Sabinas, Coahuila: Festival de la Carne Asada 2020",
+        title: "Festival de la Carne Asada 2020 - Sabinas, Coahuila",
         link: { path: "/proyectos/fcasabinas" },
       },
     ],

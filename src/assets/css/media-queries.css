@@ -27,6 +27,9 @@
 
     /* MyAnimeSearcherView */
     --mal-icon-left: calc(100% / 2 - 50px);
+
+    /* FCASabinasView */
+    --fca-icon-left: calc(100% / 2 - 50px);
   }
 }
 

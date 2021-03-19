@@ -64,6 +64,7 @@ export default {
 
 <style scoped>
 .divMyAnimeSearcherView {
+  z-index: var(--view-index);
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: 1fr;
