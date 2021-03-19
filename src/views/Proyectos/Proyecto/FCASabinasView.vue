@@ -131,6 +131,7 @@ export default {
   display: grid;
   padding: 20px;
   padding-top: 80px;
+  padding-bottom: 80px;
   grid-auto-flow: row;
   grid-template-columns: 1fr;
   align-content: start;
