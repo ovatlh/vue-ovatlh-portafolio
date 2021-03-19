@@ -28,6 +28,14 @@ export default {
   },
   name: "home-view",
   props: [],
+  beforeCreate(){
+    // document.body.style.scrollBehavior = "smooth";
+    // document.getElementsByTagName("body")[0].style.scrollBehavior = 'smooth';
+  },
+  beforeDestroy() {
+    // document.body.style.scrollBehavior = "auto";
+    // document.getElementsByTagName("body")[0].style.scrollBehavior = 'auto';
+  },
   mounted() {},
   data() {
     return {};

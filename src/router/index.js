@@ -51,7 +51,10 @@ const routes = [
 const router = new VueRouter({
   scrollBehavior: function(to) {
     if (to.hash) {
-      return { selector: to.hash };
+      return { 
+        selector: to.hash,
+        behavior: 'smooth', 
+      };
     } 
     
     return { x: 0, y: 0 };
@@ -88,7 +91,9 @@ router.beforeResolve((to, from, next) => {
 });
 
 router.afterEach(() => {  
-  vuexstore.dispatch("actToggleCenterCambioPagina", { status: false });
+  setTimeout(function() {
+    vuexstore.dispatch("actToggleCenterCambioPagina", { status: false });
+  }, 1);
   vuexstore.dispatch("actToggleCambioPagina", { status: false });
 });
 

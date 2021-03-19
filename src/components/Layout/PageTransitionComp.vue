@@ -60,7 +60,7 @@ export default {
 
 .clr3 {
   z-index: 3;
-  background-color: #1e1e1e;
+  background-color: #4f4f4f;
   /* transform: translateX(-100%); */
 }
 
