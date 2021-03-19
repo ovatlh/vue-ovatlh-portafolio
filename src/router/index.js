@@ -63,20 +63,57 @@ const router = new VueRouter({
 });
 
 router.beforeResolve((to, from, next) => {
-  if (from.fullPath.includes("/home")) {
-    if (!to.fullPath.includes("/home")) {
-      setTimeout(function() {
-        next();
-      }, 400);
+  // if (from.fullPath.includes("/home") || from.path === "/") {
+  //   if (to.fullPath.includes("/home")) {
+  //     next();
+  //   } else {
+  //     setTimeout(function() {
+  //       next();
+  //     }, 400);
 
-      vuexstore.dispatch("actToggleCambioPagina", { status: true });
+  //     vuexstore.dispatch("actToggleCambioPagina", { status: true });
 
-      setTimeout(function() {
-        vuexstore.dispatch("actToggleCenterCambioPagina", { status: true });
-      }, 300);
-    } else {
-      next();
-    }
+  //     setTimeout(function() {
+  //       vuexstore.dispatch("actToggleCenterCambioPagina", { status: true });
+  //     }, 300);
+  //   }
+  // } else {
+  //   setTimeout(function() {
+  //     next();
+  //   }, 400);
+
+  //   vuexstore.dispatch("actToggleCambioPagina", { status: true });
+
+  //   setTimeout(function() {
+  //     vuexstore.dispatch("actToggleCenterCambioPagina", { status: true });
+  //   }, 300);
+  // }
+
+  // switch (from.path) {
+  //   case "/":
+  //     next();
+  //     break;
+  //   case "/home":
+  //     next();
+  //     break;
+  //   default:
+  //     setTimeout(function() {
+  //       next();
+  //     }, 400);
+
+  //     vuexstore.dispatch("actToggleCambioPagina", { status: true });
+
+  //     setTimeout(function() {
+  //       vuexstore.dispatch("actToggleCenterCambioPagina", { status: true });
+  //     }, 300);
+  //     break;
+  // }
+
+  if (
+    (from.path === "/" || from.path === "/home") &&
+    (to.path === "/" || to.path === "/home")
+  ) {
+    next();
   } else {
     setTimeout(function() {
       next();

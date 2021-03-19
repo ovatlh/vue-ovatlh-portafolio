@@ -4,11 +4,14 @@
   --body-clr: #ffffff;
   --body-fontfamily: "Poppins";
 
+  /* SplashScreenComp */
+  --sscomp-index: 5;
+
   /* PageTransitionComp */
   --ptcomp-index: 3;
 
   /* Navbar */
-  --navbar-index: 2;
+  --navbar-index: 4;
   --navbar-desktop: grid;
   --navbar-desktop-height: 41px;
   --navbar-movil: none;

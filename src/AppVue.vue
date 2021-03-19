@@ -9,6 +9,8 @@
     <transition name="page-transition" mode="in-out" :duration="500">
       <PageTransitionComp v-if="cmpMapShowCambioPagina" key="pagetransition" />
     </transition>
+
+    <SplashScreenComp v-if="false"/>
   </div>
 </template>
 
@@ -16,6 +18,7 @@
 import NavbarComp from "@/components/Layout/NavbarComp.vue";
 import NavbarMovilComp from "@/components/Layout/NavbarMovilComp.vue";
 import PageTransitionComp from "@/components/Layout/PageTransitionComp.vue";
+import SplashScreenComp from "@/components/Layout/SplashScreenComp.vue";
 
 import { mapGetters } from "vuex";
 
@@ -24,6 +27,7 @@ export default {
     NavbarComp,
     NavbarMovilComp,
     PageTransitionComp,
+    SplashScreenComp,
   },
   name: "app-vue",
   props: [],
