@@ -28,6 +28,10 @@ export default {
           nombre: ".NET Core",
         },
         {
+          img: require("@/assets/logos/logo_csharp.png"),
+          nombre: "C#",
+        },
+        {
           img: require("@/assets/logos/logo_vuejs.png"),
           nombre: "Vue.js",
         },
