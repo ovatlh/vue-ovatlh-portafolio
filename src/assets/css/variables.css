@@ -4,6 +4,9 @@
   --body-clr: #ffffff;
   --body-fontfamily: "Poppins";
 
+  /* PageTransitionComp */
+  --ptcomp-index: 3;
+
   /* Navbar */
   --navbar-index: 2;
   --navbar-desktop: grid;

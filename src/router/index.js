@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import vuexstore from "@/store/";
 
 Vue.use(VueRouter);
 
@@ -56,6 +57,44 @@ const router = new VueRouter({
     }
   },
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  // console.log("Cargando...");
+  // console.log("from:" ,from);
+  if (from.fullPath.includes("/home")) {
+    if (!to.fullPath.includes("/home")) {
+      console.log("Page from to: Other");
+      // alert("Other");
+      vuexstore.dispatch("actToggleCambioPagina", { status: true }).then(() => {
+        next();
+      });
+    } else {
+      next();
+    }
+    // else {
+    //   console.log("Page from to: Home");
+    // }
+  } else {
+    console.log("Page to: Other");
+    // alert("Other");
+    vuexstore.dispatch("actToggleCambioPagina", { status: true }).then(() => {
+      next();
+    });
+    // if (!to.fullPath.includes("/home")) {
+    //   console.log("Page to: Other");
+    // } else {
+    //   console.log("Page to: Home");
+    // }
+  }
+  // console.log("to:" ,to);
+
+  // next();
+});
+
+router.afterEach(() => {
+  // console.log("Terminado...");
+  vuexstore.dispatch("actToggleCambioPagina", { status: false });
 });
 
 export default router;
