@@ -10,7 +10,7 @@
       <PageTransitionComp v-if="cmpMapShowCambioPagina" key="pagetransition" />
     </transition>
 
-    <transition name="ss-transition" mode="in-out" :duration="{ enter: 1, leave: 1400 }">
+    <transition name="ss-transition" mode="in-out" :duration="{ enter: 1, leave: 1300 }">
       <SplashScreenComp v-if="cmpMapStatusSplashScreen" key="sstransition" />
     </transition>
   </div>
