@@ -45,7 +45,7 @@ export default {
   data() {
     return {
       imgPortada: require("@/assets/imgs/portada.jpg"),
-      imgProfile01: require("@/assets/imgs/profile_picture_01.jpg"),
+      imgProfile01: require("@/assets/imgs/ovatlh.jpg"),
       iconScrollV: require("@/assets/icons/scroll-v.svg"),
     };
   },

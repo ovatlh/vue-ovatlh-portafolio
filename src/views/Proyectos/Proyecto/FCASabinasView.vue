@@ -9,13 +9,13 @@
 
     <div class="content">
       <p><strong>Festival de la Carne Asada 2020 - Sabinas, Coahuila</strong></p>
-      <p>Fue un evento donde varios equipos competían entre sí para saber quien era el mejor en el ramo de la carne asada de manera amateur.</p>
+      <p>Fue un evento donde varios equipos competían entre sí, para saber quien era el mejor en el ramo de la carne asada de manera amateur.</p>
       <p>Estos fueron calificados por jueces, los cuales tienen experiencia en la cocina.</p>
       
       <br>
 
       <p>Participe como <strong>programador back-end</strong>, junto a mis compañeros de grado en la creación de un sistema para el evento Festival de la Carne Asada 2020 de Sabinas, Coahuila.</p>
-      <p>El sistema consiste en poder administrar los equipos, jueces, fechas, ubicaciones, calificaciones y demás para el control de los datos en tiempo real desde una aplicación móvil, la cual les ayudaba a los jueces para poder calificar a los participantes.</p>
+      <p>El sistema consiste en poder administrar los equipos, jueces, fechas y tiempos, ubicaciones, calificaciones y demás para el control de los datos en tiempo real desde una aplicación móvil, la cual les ayudaba a los jueces para poder calificar a los participantes.</p>
       <p>Los datos en tiempo real se mostraban en una pantalla en grande para todo el público por medio de un rango de colores.</p>  
       
       <br>

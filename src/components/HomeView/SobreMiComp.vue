@@ -19,7 +19,7 @@
           Estudie la carrera de <strong>Ing. en Sistemas Computacionales</strong> en el <strong>ITESRC</strong> (Instituto Tecnológico de Estudios Superiores de la Región Carbonífera).
         </p> -->
         <p>
-          Llevo programando desde la secundaria hasta la fecha y desde entonces he pasado por visual basic, adobe flash con action script (2.0 y 3.0), c, c++, hasta las tecnologías que aparecen al final.
+          Llevo programando desde la secundaria y desde entonces he pasado por visual basic, adobe flash con action script (2.0 y 3.0), c, c++, hasta las tecnologías que aparecen al final.
         </p>
         <p>
           Me gusta seguir estudiando para mantenerme actualizado, mejorar y aumentar mis conocimientos en la programación.
@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      imgProfile02: require("@/assets/imgs/profile_picture_02.jpg"),
+      imgProfile02: require("@/assets/imgs/ovatlh_2.jpg"),
       edad: 23,
       fechaNacimiento: new Date(1997, 10, 23),
     };
