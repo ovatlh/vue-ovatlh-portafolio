@@ -10,11 +10,19 @@
         <p>
           Hola, soy <strong>Tavo</strong>, tengo {{ edad }} años y soy de México.
         </p>
+
         <p>
+          Soy egresado del <strong>ITESRC</strong> (Instituto Tecnológico de Estudios Superiores de la Región Carbonífera) de la carrera <strong>Ing. en Sistemas Computacionales</strong>.
+        </p>
+
+        <!-- <p>
           Estudie la carrera de <strong>Ing. en Sistemas Computacionales</strong> en el <strong>ITESRC</strong> (Instituto Tecnológico de Estudios Superiores de la Región Carbonífera).
+        </p> -->
+        <p>
+          Llevo programando desde la secundaria hasta la fecha y desde entonces he pasado por visual basic, adobe flash con action script (2.0 y 3.0), c, c++, hasta las tecnologías que aparecen al final.
         </p>
         <p>
-          Llevo programando desde la secundaria hasta la fecha y he pasado por visual basic, adobe flash con action script (2.0 y 3.0), c, c++ y ahora estoy centrado en todas las tecnologías que aparecen abajo.
+          Me gusta seguir estudiando para mantenerme actualizado, mejorar y aumentar mis conocimientos en la programación.
         </p>
         
         <a href="https://rcarbonifera.tecnm.mx/" target="_blank">> Web: ITESRC</a>
