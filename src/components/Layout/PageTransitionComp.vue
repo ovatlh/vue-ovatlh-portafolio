@@ -60,7 +60,7 @@ export default {
 
 .clr3 {
   z-index: 3;
-  background-size: 300px;
+  background-size: var(--ptcomp-bg-size);
   background-repeat: repeat;
   background-image: url('~@/assets/imgs/bg_ovatlh_4x.png');
   

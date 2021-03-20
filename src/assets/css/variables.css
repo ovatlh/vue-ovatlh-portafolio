@@ -9,6 +9,7 @@
 
   /* PageTransitionComp */
   --ptcomp-index: 3;
+  --ptcomp-bg-size: 600px;
 
   /* Navbar */
   --navbar-index: 4;

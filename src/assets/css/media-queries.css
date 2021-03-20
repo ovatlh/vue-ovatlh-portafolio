@@ -1,8 +1,11 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
   :root {
     /* Navbar */
-  --navbar-desktop: none;
-  --navbar-movil: grid;
+    --navbar-desktop: none;
+    --navbar-movil: grid;
+
+    /* PageTransitionComp */
+    --ptcomp-bg-size: 300px;
 
     /* PortadaComp */
     --portadacomp-content-grd-areas: "ovaTlh" "Tavolh";
