@@ -60,7 +60,11 @@ export default {
 
 .clr3 {
   z-index: 3;
-  background-color: #4f4f4f;
+  background-size: 300px;
+  background-repeat: repeat;
+  background-image: url('~@/assets/imgs/bg_ovatlh_4x.png');
+  
+  /* background-color: #4f4f4f; */
   /* transform: translateX(-100%); */
 }
 
