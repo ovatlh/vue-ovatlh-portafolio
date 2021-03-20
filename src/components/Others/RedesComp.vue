@@ -51,6 +51,12 @@ export default {
           title: "Facebook: @ovatlh",
           link: "https://www.facebook.com/ovatlh",
         },
+        {
+          img: require("@/assets/icons/redes_mal.svg"),
+          nombre: "MyAnimeList",
+          title: "MyAnimeList: @ovatlh",
+          link: "https://myanimelist.net/profile/ovatlh",
+        },
       ],
     };
   },
