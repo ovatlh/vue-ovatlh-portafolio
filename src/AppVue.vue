@@ -10,7 +10,9 @@
       <PageTransitionComp v-if="cmpMapShowCambioPagina" key="pagetransition" />
     </transition>
 
-    <SplashScreenComp v-if="false"/>
+    <transition name="ss-transition" mode="in-out" :duration="{ enter: 1, leave: 1400 }">
+      <SplashScreenComp v-if="cmpMapStatusSplashScreen" key="sstransition" />
+    </transition>
   </div>
 </template>
 
@@ -39,6 +41,7 @@ export default {
   computed: {
     ...mapGetters({
       cmpMapShowCambioPagina: "gettShowCambioPagina",
+      cmpMapStatusSplashScreen: "gettStatusSplashScreen",
     }),
   },
 };
@@ -58,12 +61,12 @@ export default {
 
 .page-transition-enter-active {
   animation: pt-in 0.5s ease-out;
-  animation-delay: 0.0s;
+  animation-delay: 0s;
 }
 
 .page-transition-leave-active {
   animation: pt-out 0.5s ease-in;
-  animation-delay: 0.0s;
+  animation-delay: 0s;
 }
 
 @keyframes pt-in {
@@ -81,6 +84,20 @@ export default {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.ss-transition-leave-active {
+  animation: ss-out 0.5s ease-out;
+  animation-delay: 1s;
+}
+
+@keyframes ss-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 </style>

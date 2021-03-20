@@ -41,7 +41,7 @@ export default {
 
   padding: 20%;
 
-  animation: logo-anim 1s linear infinite;
+  /* animation: logo-anim 1s linear infinite; */
 }
 
 @keyframes logo-anim {

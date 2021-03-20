@@ -132,6 +132,8 @@ router.afterEach(() => {
     vuexstore.dispatch("actToggleCenterCambioPagina", { status: false });
   }, 1);
   vuexstore.dispatch("actToggleCambioPagina", { status: false });
+
+  vuexstore.dispatch("actToggleSplashScreen", { status: false });
 });
 
 export default router;
