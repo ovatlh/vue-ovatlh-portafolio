@@ -16,6 +16,7 @@
     --sobremicomp-content-grd-areas: "Profile" "Text";
     --sobremicomp-content-grd-columns: 1fr;
     --sobremicomp-content-grd-rows: auto 1fr;
+    --sobremicomp-content-grd-gap: 100px;
 
     /* ServiciosComp */
     --servicioscomp-pdd: 40px 10px;

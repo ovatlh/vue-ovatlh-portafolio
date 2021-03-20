@@ -80,7 +80,7 @@ export default {
   width: 100%;
 
   display: grid;
-  gap: 50px;
+  gap: var(--sobremicomp-content-grd-gap);
   padding: 50px;
   grid-template-areas: var(--sobremicomp-content-grd-areas);
   grid-template-columns: var(--sobremicomp-content-grd-columns);
