@@ -44,8 +44,8 @@ export default {
   mounted() {},
   data() {
     return {
-      imgPortada: require("@/assets/imgs/portada.jpg"),
-      imgProfile01: require("@/assets/imgs/ovatlh.jpg"),
+      imgPortada: "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/portada.jpg",
+      imgProfile01: "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/ovatlh_1.jpg",
       iconScrollV: require("@/assets/icons/scroll-v.svg"),
     };
   },

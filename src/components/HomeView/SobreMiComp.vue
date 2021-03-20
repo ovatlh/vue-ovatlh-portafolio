@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      imgProfile02: require("@/assets/imgs/ovatlh_2.jpg"),
+      imgProfile02: "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/ovatlh_2.jpg",
       edad: 23,
       fechaNacimiento: new Date(1997, 10, 23),
     };
