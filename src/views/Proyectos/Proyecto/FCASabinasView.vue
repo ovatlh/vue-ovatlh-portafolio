@@ -56,7 +56,9 @@
 export default {
   name: "fca-sabinas-view",
   props: [],
-  mounted() {},
+  mounted() {
+    document.title = "Festival de la Carne Asada 2020 | @ovatlh";
+  },
   data() {
     return {
       pngIcon: require("@/assets/proyectos/fcasabinas/imgs/fcasabinas_icon.png"),

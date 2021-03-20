@@ -36,7 +36,9 @@ export default {
     // document.body.style.scrollBehavior = "auto";
     // document.getElementsByTagName("body")[0].style.scrollBehavior = 'auto';
   },
-  mounted() {},
+  mounted() {
+    document.title = "Inicio | @ovatlh";
+  },
   data() {
     return {};
   },

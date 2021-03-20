@@ -50,7 +50,9 @@
 export default {
   name: "my-anime-searcher-view",
   props: [],
-  mounted() {},
+  mounted() {
+    document.title = "MyAnimeSearcher | @ovatlh";
+  },
   data() {
     return {
       svgLogo: require("@/assets/proyectos/myanimesearcher/imgs/malsearcher-icon-large.svg"),

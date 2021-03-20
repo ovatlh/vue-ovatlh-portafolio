@@ -40,7 +40,9 @@ export default {
   },
   name: "proyectos-view",
   props: [],
-  mounted() {},
+  mounted() {
+    document.title = "Proyectos | @ovatlh";
+  },
   data() {
     return {};
   },
