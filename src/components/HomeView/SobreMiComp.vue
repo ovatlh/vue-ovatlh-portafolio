@@ -8,23 +8,17 @@
 
       <div class="text">
         <p>
-          Lorem ipsum dolor sit, <strong>Tavo</strong> amet consectetur
-          adipisicing elit. Totam consequuntur dolore veniam, odio modi nostrum
-          quidem aut, quos dicta doloribus praesentium, voluptatum ea quod in
-          laborum perferendis. Doloribus iusto excepturi, ipsum omnis sit
-          adipisci! Aliquid, nostrum quisquam amet quaerat iste inventore
-          corporis asperiores voluptate. Illo, maiores quos? Perspiciatis,
-          labore voluptatem!
+          Hola, soy <strong>Tavo</strong>, tengo {{ edad }} años y soy de México.
         </p>
         <p>
-          Lorem ipsum dolor sit, <strong>Tavo</strong> amet consectetur
-          adipisicing elit. Totam consequuntur dolore veniam, odio modi nostrum
-          quidem aut, quos dicta doloribus praesentium, voluptatum ea quod in
-          laborum perferendis. Doloribus iusto excepturi, ipsum omnis sit
-          adipisci! Aliquid, nostrum quisquam amet quaerat iste inventore
-          corporis asperiores voluptate. Illo, maiores quos? Perspiciatis,
-          labore voluptatem!
+          Estudie la carrera de <strong>Ing. en Sistemas Computacionales</strong> en el <strong>ITESRC</strong> (Instituto Tecnológico de Estudios Superiores de la Región Carbonífera).
         </p>
+        <p>
+          Llevo programando desde la secundaria hasta la fecha y he pasado por visual basic, adobe flash con action script (2.0 y 3.0), c, c++ y ahora estoy centrado en todas las tecnologías que aparecen abajo.
+        </p>
+        
+        <a href="https://rcarbonifera.tecnm.mx/" target="_blank">> Web: ITESRC</a>
+        <a href="https://www.facebook.com/itesrc" target="_blank">> Facebook: ITESRC</a>
       </div>
     </div>
   </div>
@@ -34,13 +28,24 @@
 export default {
   name: "sobre-mi-comp",
   props: [],
-  mounted() {},
+  mounted() {
+    this.mthCalcularEdad();
+  },
   data() {
     return {
       imgProfile02: require("@/assets/imgs/profile_picture_02.jpg"),
+      edad: 23,
+      fechaNacimiento: new Date(1997, 10, 23),
     };
   },
-  methods: {},
+  methods: {
+    mthCalcularEdad() {
+      var diff_ms = Date.now() - this.fechaNacimiento.getTime();
+      var age_dt = new Date(diff_ms);
+
+      this.edad = Math.abs(age_dt.getUTCFullYear() - 1970);
+    },
+  },
   computed: {},
 };
 </script>
@@ -57,7 +62,7 @@ export default {
   min-height: 600px;
 
   overflow: hidden;
-  
+
   background-color: #ffffff;
 
   box-shadow: 0 -50px 50px 0 rgba(0, 0, 0, 1);
@@ -76,7 +81,7 @@ export default {
   align-items: center;
 }
 
-.divImgProfile{
+.divImgProfile {
   max-width: 250px;
   max-height: 250px;
   display: grid;
@@ -105,6 +110,7 @@ export default {
 
 .text {
   display: grid;
+  grid-auto-flow: row;
   gap: 10px;
   align-content: start;
 
@@ -113,7 +119,19 @@ export default {
 
 .text p {
   text-align: start;
-  word-break: break-all;
+  /* word-break: break-all; */
   word-wrap: break-word;
+}
+
+.text a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1e1e1e;
+  padding: 5px 10px;
+}
+
+.text a:hover {
+  background-color: #1e1e1e;
+  color: #ffffff;
 }
 </style>
