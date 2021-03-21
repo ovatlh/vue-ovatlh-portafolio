@@ -2,13 +2,23 @@
   <div id="navbar" class="divNavbarComp">
     <router-link :to="{ name: 'Home', hash: '#inicio' }">Inicio</router-link>
     <router-link :to="{ name: 'Home', hash: '#sobremi' }">Sobre mi</router-link>
-    <router-link :to="{ name: 'Home', hash: '#servicios' }">Servicios</router-link>
-    <router-link :to="{ name: 'Home', hash: '#proyectos' }">Proyectos</router-link>
-    <router-link :to="{ name: 'Home', hash: '#tecnologias' }">Tecnologías</router-link>
+    <router-link :to="{ name: 'Home', hash: '#servicios' }"
+      >Servicios</router-link
+    >
+    <router-link :to="{ name: 'Home', hash: '#proyectos' }"
+      >Proyectos</router-link
+    >
+    <router-link :to="{ name: 'Home', hash: '#tecnologias' }"
+      >Tecnologías</router-link
+    >
+    <div class="divContact" @click="mthToggleContact">
+      Contacto
+    </div>
   </div>
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
   name: "navbar-comp",
   props: [],
@@ -16,7 +26,14 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    ...mapActions({
+      mthMapToggleContact: "actToggleContact",
+    }),
+    mthToggleContact() {
+      this.mthMapToggleContact({ status: true });
+    },
+  },
   computed: {},
 };
 </script>
@@ -43,16 +60,18 @@ export default {
   user-select: none;
 }
 
-#navbar a {
+#navbar a, #navbar .divContact {
   text-decoration: none;
   color: #ffffff;
   padding: var(--navbar-a-pdd);
   font-weight: 600;
   font-size: 14px;
   padding: 10px;
+  
+  cursor: pointer;
 }
 
-#navbar a:hover {
+#navbar a:hover, #navbar .divContact:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 </style>

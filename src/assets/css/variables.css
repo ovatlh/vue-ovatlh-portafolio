@@ -4,6 +4,9 @@
   --body-clr: #ffffff;
   --body-fontfamily: "Poppins";
 
+  /* ContactComp */
+  --contactcomp-index: 4;
+
   /* SplashScreenComp */
   --sscomp-index: 5;
 

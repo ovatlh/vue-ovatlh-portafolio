@@ -10,8 +10,20 @@
       <PageTransitionComp v-if="cmpMapShowCambioPagina" key="pagetransition" />
     </transition>
 
-    <transition name="ss-transition" mode="in-out" :duration="{ enter: 1, leave: 1300 }">
+    <transition
+      name="ss-transition"
+      mode="in-out"
+      :duration="{ enter: 1, leave: 1300 }"
+    >
       <SplashScreenComp v-if="cmpMapStatusSplashScreen" key="sstransition" />
+    </transition>
+
+    <transition
+      name="contact-transition"
+      mode="in-out"
+      :duration="{ enter: 400, leave: 400 }"
+    >
+      <ContactComp v-if="cmpMapStatusContact" />
     </transition>
   </div>
 </template>
@@ -21,6 +33,7 @@ import NavbarComp from "@/components/Layout/NavbarComp.vue";
 import NavbarMovilComp from "@/components/Layout/NavbarMovilComp.vue";
 import PageTransitionComp from "@/components/Layout/PageTransitionComp.vue";
 import SplashScreenComp from "@/components/Layout/SplashScreenComp.vue";
+import ContactComp from "@/components/Others/ContactComp.vue";
 
 import { mapGetters } from "vuex";
 
@@ -30,6 +43,7 @@ export default {
     NavbarMovilComp,
     PageTransitionComp,
     SplashScreenComp,
+    ContactComp,
   },
   name: "app-vue",
   props: [],
@@ -42,6 +56,7 @@ export default {
     ...mapGetters({
       cmpMapShowCambioPagina: "gettShowCambioPagina",
       cmpMapStatusSplashScreen: "gettStatusSplashScreen",
+      cmpMapStatusContact: "gettStatusContact",
     }),
   },
 };
@@ -93,6 +108,32 @@ export default {
 }
 
 @keyframes ss-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.contact-transition-enter-active {
+  animation: contact-in 0.5s ease-out;
+}
+
+.contact-transition-leave-active {
+  animation: contact-out 0.5s ease-out;
+}
+
+@keyframes contact-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contact-out {
   0% {
     opacity: 1;
   }

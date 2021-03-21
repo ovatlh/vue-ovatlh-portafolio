@@ -1,26 +1,55 @@
 <template>
   <div id="navbarmovil" class="divNavbarMovilComp">
     <transition-group name="navbar-items">
-      <router-link v-if="menu_active" key="inicio" :to="{ name: 'Home', hash: '#inicio' }">Inicio</router-link>
-      <router-link v-if="menu_active" key="sobremi" :to="{ name: 'Home', hash: '#sobremi' }">Sobre mi</router-link>
-      <router-link v-if="menu_active" key="servicios" :to="{ name: 'Home', hash: '#servicios' }">Servicios</router-link>
-      <router-link v-if="menu_active" key="proyectos" :to="{ name: 'Home', hash: '#proyectos' }">Proyectos</router-link>
-      <router-link v-if="menu_active" key="tecnologias" :to="{ name: 'Home', hash: '#tecnologias' }">Tecnologías</router-link>
+      <router-link
+        v-if="menu_active"
+        key="inicio"
+        :to="{ name: 'Home', hash: '#inicio' }"
+        >Inicio</router-link
+      >
+      <router-link
+        v-if="menu_active"
+        key="sobremi"
+        :to="{ name: 'Home', hash: '#sobremi' }"
+        >Sobre mi</router-link
+      >
+      <router-link
+        v-if="menu_active"
+        key="servicios"
+        :to="{ name: 'Home', hash: '#servicios' }"
+        >Servicios</router-link
+      >
+      <router-link
+        v-if="menu_active"
+        key="proyectos"
+        :to="{ name: 'Home', hash: '#proyectos' }"
+        >Proyectos</router-link
+      >
+      <router-link
+        v-if="menu_active"
+        key="tecnologias"
+        :to="{ name: 'Home', hash: '#tecnologias' }"
+        >Tecnologías</router-link
+      >
+      <div class="divContact" v-if="menu_active" key="contacto" @click="mthToggleContact"
+        >Contacto</div
+      >
     </transition-group>
 
     <div class="menu" @click="mthToogleMenu">
-      <div class="iconMenu" :class="{ showIcon : cmpShowMenuIcon }">
-        <img id="menu" :src="imgMenu" onload="SVGInject(this)"/>
+      <div class="iconMenu" :class="{ showIcon: cmpShowMenuIcon }">
+        <img id="menu" :src="imgMenu" onload="SVGInject(this)" />
       </div>
 
-      <div class="iconClose" :class="{ showIcon : cmpShowCloseIcon }">
-        <img id="close" :src="imgClose" onload="SVGInject(this)"/>
+      <div class="iconClose" :class="{ showIcon: cmpShowCloseIcon }">
+        <img id="close" :src="imgClose" onload="SVGInject(this)" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
   name: "navbar-movil-comp",
   props: [],
@@ -33,17 +62,23 @@ export default {
     };
   },
   methods: {
-    mthToogleMenu(){
+    ...mapActions({
+      mthMapToggleContact: "actToggleContact",
+    }),
+    mthToggleContact() {
+      this.mthMapToggleContact({ status: true });
+    },
+    mthToogleMenu() {
       this.menu_active = !this.menu_active;
     },
   },
   computed: {
-    cmpShowMenuIcon(){
+    cmpShowMenuIcon() {
       return this.menu_active === false;
     },
-    cmpShowCloseIcon(){
+    cmpShowCloseIcon() {
       return this.menu_active === true;
-    }
+    },
   },
 };
 </script>
@@ -75,7 +110,7 @@ export default {
   justify-content: end;
 }
 
-#navbarmovil a {
+#navbarmovil a, #navbarmovil .divContact {
   text-decoration: none;
   padding: var(--navbar-a-pdd);
   font-weight: 600;
@@ -87,6 +122,8 @@ export default {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+  cursor: pointer;
 }
 
 .navbar-items-enter-active {
@@ -146,7 +183,8 @@ export default {
   align-items: center;
 }
 
-.iconMenu, .iconClose {
+.iconMenu,
+.iconClose {
   display: none;
 }
 
